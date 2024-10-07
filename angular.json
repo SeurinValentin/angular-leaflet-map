@@ -52,6 +52,7 @@
               }
             ],
             "styles": [
+              "./node_modules/leaflet/dist/leaflet.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -117,5 +118,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "90259fba-2e8a-481e-9a17-9e1023db6910"
   }
 }

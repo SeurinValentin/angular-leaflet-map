@@ -1,0 +1,13 @@
+.navbar {
+    width: 93.25%;
+    margin-left: 42px;
+    background-color: rgba(141, 132, 132, 0.555);
+    margin-top: -20px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+}
+
+.navbar-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+}

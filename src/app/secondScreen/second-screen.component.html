@@ -1,0 +1,43 @@
+<div>
+  <h2>⬇️ Liste des capitales ⬇️</h2>
+  <ul>
+    <li *ngFor="let capital of capitals">
+      <input
+        [(ngModel)]="capital.city"
+        (ngModelChange)="handleChange(capital.id, 'city', $event)"
+      />
+      <input
+        [(ngModel)]="capital.country"
+        (ngModelChange)="handleChange(capital.id, 'country', $event)"
+      />
+      <input
+        type="number"
+        [(ngModel)]="capital.population"
+        (ngModelChange)="handleChange(capital.id, 'population', $event)"
+      />
+      <input
+        type="number"
+        [(ngModel)]="capital.lat"
+        (ngModelChange)="handleChange(capital.id, 'lat', $event)"
+      />
+      <input
+        type="number"
+        [(ngModel)]="capital.lng"
+        (ngModelChange)="handleChange(capital.id, 'lng', $event)"
+      />
+      <button (click)="handleDelete(capital.id)">Supprimer</button>
+    </li>
+  </ul>
+
+  <h2>⬇️ Ajouter une nouvelle capitale ⬇️</h2>
+  <input placeholder="Pays" [(ngModel)]="newCapital.country" />
+  <input placeholder="Ville" [(ngModel)]="newCapital.city" />
+  <input
+    placeholder="Population"
+    type="number"
+    [(ngModel)]="newCapital.population"
+  />
+  <input placeholder="Latitude" type="number" [(ngModel)]="newCapital.lat" />
+  <input placeholder="Longitude" type="number" [(ngModel)]="newCapital.lng" />
+  <button (click)="handleAddCapital()">Ajouter</button>
+</div>
